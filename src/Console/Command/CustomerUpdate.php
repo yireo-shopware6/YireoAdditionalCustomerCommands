@@ -29,11 +29,12 @@ class CustomerUpdate extends Command
 
     protected function configure()
     {
-        $this->addOption('first_name', null, InputOption::VALUE_REQUIRED, 'First name');
-        $this->addOption('last_name', null, InputOption::VALUE_REQUIRED, 'Last name');
-        $this->addOption('company', null, InputOption::VALUE_REQUIRED, 'Company');
         $this->addOption('email', null, InputOption::VALUE_REQUIRED, 'Email address');
-        $this->addOption('password', null, InputOption::VALUE_REQUIRED, 'Password');
+
+        $this->addOption('first_name', null, InputOption::VALUE_OPTIONAL, 'First name');
+        $this->addOption('last_name', null, InputOption::VALUE_OPTIONAL, 'Last name');
+        $this->addOption('company', null, InputOption::VALUE_OPTIONAL, 'Company');
+        $this->addOption('password', null, InputOption::VALUE_OPTIONAL, 'Password');
         $this->addOption('sales_channel_id', null, InputOption::VALUE_OPTIONAL, 'Sales Channel ID');
         $this->addOption('group_id', null, InputOption::VALUE_OPTIONAL, 'Customer Group ID');
         $this->addOption('customer_number', null, InputOption::VALUE_OPTIONAL, 'Customer Number');

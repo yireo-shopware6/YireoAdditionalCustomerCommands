@@ -20,3 +20,6 @@ Create a new customer (and its address):
 ```bash
 bin/console customer:create --first_name John --last_name Doe --company Shopware --email john@shopware.com --password P@ssw0rd123 --street "Ebbinghoff 10" --city Schöppingen --country DE
 ```
+
+## Something missing?
+Add your Pull Request and let's get started.
