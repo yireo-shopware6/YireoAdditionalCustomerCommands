@@ -1,0 +1,30 @@
+{
+  "name": "yireo/shopware6-additional-customer-commands",
+  "description": "Various commands to manage customer records",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jisse Reitsma"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "OSL-v3",
+  "autoload": {
+    "psr-4": {
+      "Yireo\\AdditionalCustomerCommands\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Yireo\\AdditionalCustomerCommands\\YireoAdditionalCustomerCommands",
+    "copyright": "Jisse Reitsma",
+    "label": {
+      "en-GB": "YireoAdditionalCustomerCommands"
+    },
+    "description": {
+      "en-GB": "Various commands to manage customer records"
+    }
+  }
+}
